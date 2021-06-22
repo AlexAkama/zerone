@@ -1,0 +1,61 @@
+spring.jpa.hibernate.ddl-auto: validate
+spring.datasource.url:
+spring.datasource.username:
+spring.datasource.password:
+spring.jpa.show-sql: false
+spring.jpa.generate-ddl: false
+
+jwt.token.secret:
+jwt.token.expired: 3600000
+jwt.token.test:
+
+
+email:
+  host:
+  port:
+  username:
+  password:
+
+upload:
+  path:
+
+default:
+  perPage: 10
+
+limit:
+  approval:
+    expirationPerSec: 3600
+  reset:
+    expirationPerSec: 180
+  comment:
+    lifetimePerSec: 300
+  age:
+    min: 15
+
+logging:
+  logFiles:
+    path:
+
+spring.boot.admin.client.url: http://localhost:8081
+spring.boot.admin.client.instance.service-url: http://localhost:8080
+spring.boot.admin.client.instance.health-url: http://localhost:8080/actuator/health
+spring.boot.admin.client.instance.management-url: http://localhost:8080/actuator
+
+management.endpoint.health.show-details: always
+
+spring:
+  application:
+    name: social-network
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+spring.boot.admin.client.username:
+spring.boot.admin.client.password:
+
+notification.lifeMS : 3600000
+
+friend.recommendation.count : 5
